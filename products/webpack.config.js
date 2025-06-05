@@ -30,7 +30,7 @@ module.exports = {
              * Container can choose to use faker dependency from 
              * either cart or products 
             */
-            shared: ['faker'],
+            shared: ['faker']
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
