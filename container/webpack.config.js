@@ -13,7 +13,8 @@ module.exports = {
             name: 'container',
             // products in URL - related to 'name' property in products webpack config
             remotes: {
-                products: 'products@http://localhost:8081/remoteEntry.js'
+                products: 'products@http://localhost:8081/remoteEntry.js',
+                cart: 'cart@http://localhost:8082/remoteEntry.js'
             }
         }),
         new HtmlWebpackPlugin({
