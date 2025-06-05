@@ -8,10 +8,12 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
+            // The string value here must match the beginning of the url
+            // in the container webpack config remote URL
             name: 'cart',
             filename: 'remoteEntry.js',
             exposes: {
-                './CartShow': './src/index'
+                './CartShow': './src/bootstrap'
             },
             shared: ['faker']
         }),

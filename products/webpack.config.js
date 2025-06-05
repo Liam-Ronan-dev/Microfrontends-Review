@@ -23,7 +23,7 @@ module.exports = {
              * meaningful in the products context
              */
             exposes: {
-                './ProductsIndex': './src/index'
+                './ProductsIndex': './src/bootstrap'
             },
             /**
              * Shared module

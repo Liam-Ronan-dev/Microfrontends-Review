@@ -1,5 +1,6 @@
 import faker from "faker";
 
+//True startup location of the products project
 const mount = (el) => {
     let products = '';
 
@@ -40,7 +41,4 @@ if(process.env.NODE_ENV === 'development') {
  * Container decides when, how, and where it decides to display a sub-application
 */
 
- 
-
-// Now it is up to the container when to show the products
 export { mount };
