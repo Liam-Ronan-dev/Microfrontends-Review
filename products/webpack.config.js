@@ -25,6 +25,11 @@ module.exports = {
             exposes: {
                 './ProductsIndex': './src/index'
             },
+            /**
+             * Shared module
+             * Container can choose to use faker dependency from 
+             * either cart or products 
+            */
             shared: ['faker'],
         }),
         new HtmlWebpackPlugin({
